@@ -1,0 +1,2 @@
+rootProject.name = "VGS_Show"
+include ':app'

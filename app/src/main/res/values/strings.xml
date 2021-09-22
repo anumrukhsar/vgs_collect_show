@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VGS Collect/Show</string>
+    <string name="collect_details">Collect Details</string>
+    <string name="show_details">Show Details</string>
+    <string name="submit">Submit</string>
+    <string name="reveal">Reveal</string>
+</resources>
