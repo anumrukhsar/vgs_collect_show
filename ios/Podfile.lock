@@ -1,0 +1,26 @@
+PODS:
+  - VGSCollectSDK (1.9.0):
+    - VGSCollectSDK/Core (= 1.9.0)
+  - VGSCollectSDK/Core (1.9.0):
+    - VGSCollectSDK/PaymentCards
+  - VGSCollectSDK/PaymentCards (1.9.0)
+  - VGSShowSDK (1.1.0):
+    - VGSShowSDK/Core (= 1.1.0)
+  - VGSShowSDK/Core (1.1.0)
+
+DEPENDENCIES:
+  - VGSCollectSDK
+  - VGSShowSDK
+
+SPEC REPOS:
+  trunk:
+    - VGSCollectSDK
+    - VGSShowSDK
+
+SPEC CHECKSUMS:
+  VGSCollectSDK: 590471903e8675a72a6d2c88d8bf3d989936437b
+  VGSShowSDK: 910e3d7ccd57dd0684361efed192f38513e80e44
+
+PODFILE CHECKSUM: bdf0c3b0ecdd65060aba707d16f8f8cd9e3794b7
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout
+        android:id="@+id/tilCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundModes="outline"
+        app:boxCornerRadius="8dp"
+        app:boxStrokeColor="#000"
+        app:hint="Card Number"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/EditTextHintTextAppearance">
+
+        <com.verygoodsecurity.vgscollect.widget.VGSCardNumberEditText
+            android:id="@+id/etCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            app:cardBrandIconGravity="end"
+            app:fieldName="cardNumber"
+            app:imeOptions="actionNext"
+            app:numberDivider=" "
+            app:textColor="@color/colorPrimaryDark"
+            app:textSize="12dp"
+            tools:ignore="SpUsage" />
+    </com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout>
+
+    <TextView
+        android:id="@+id/tvCardNumberAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:singleLine="true" />
+
+    <com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout
+        android:id="@+id/tilCardHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundModes="outline"
+        app:boxCornerRadius="8dp"
+        app:boxStrokeColor="#000"
+        app:hint="Card Holder"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/EditTextHintTextAppearance">
+
+        <com.verygoodsecurity.vgscollect.widget.PersonNameEditText
+            android:id="@+id/cardHolderNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:imeOptions="actionNext"
+            app:textColor="@color/colorPrimaryDark"
+            app:textSize="12dp"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            tools:ignore="SpUsage"
+            app:fieldName="personName"/>
+
+    </com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout>
+
+    <TextView
+        android:id="@+id/tvCardHolderAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:singleLine="true" />
+
+    <com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout
+        android:id="@+id/tilExpDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundModes="outline"
+        app:boxCornerRadius="8dp"
+        app:boxStrokeColor="#000"
+        app:hint="Expiration Date"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/EditTextHintTextAppearance">
+
+        <com.verygoodsecurity.vgscollect.widget.ExpirationDateEditText
+            android:id="@+id/etExpDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            app:fieldName="expDate"
+            app:textColor="@color/colorPrimaryDark"
+            app:textSize="12dp"
+            tools:ignore="SpUsage" />
+    </com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout>
+
+    <TextView
+        android:id="@+id/tvExpDateAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:singleLine="true" />
+
+    <com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout
+        android:id="@+id/tilCvc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundModes="outline"
+        app:boxCornerRadius="8dp"
+        app:boxStrokeColor="#000"
+        app:hint="CVC"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/EditTextHintTextAppearance">
+
+        <com.verygoodsecurity.vgscollect.widget.CardVerificationCodeEditText
+            android:id="@+id/cardCVCField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:imeOptions="actionNext"
+            app:textColor="@color/colorPrimaryDark"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            app:textSize="12dp"
+            tools:ignore="SpUsage"
+            app:fieldName="card_cvc"/>
+    </com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout>
+
+    <TextView
+        android:id="@+id/tvcardCvcAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:singleLine="true" />
+
+
+    <com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout
+        android:id="@+id/tilSSNDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundModes="outline"
+        app:boxCornerRadius="8dp"
+        app:boxStrokeColor="#000"
+        app:hint="SSN"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/EditTextHintTextAppearance">
+
+        <com.verygoodsecurity.vgscollect.widget.SSNEditText
+            android:id="@+id/ssnField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:imeOptions="actionDone"
+            app:textColor="@color/colorPrimaryDark"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            app:textSize="12dp"
+            tools:ignore="SpUsage"
+            app:fieldName="card_ssn"/>
+    </com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout>
+
+    <TextView
+        android:id="@+id/tvSSNAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:singleLine="true" />
+
+
+</LinearLayout>
